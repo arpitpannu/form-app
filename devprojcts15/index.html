@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+
+    <title>Form project</title>
+</head>
+<body>
+    <!--begin of the form page -->
+    <h1>FormData</h1>
+<div class="wrapper">
+    <form class="form">
+        <label id="nameField">
+    <input type="text" name="nameField" placeholder="Name" required/><br>
+    </label>
+     <label id="emailField">
+         <input type="email" name="emailField" placeholder="Email-ID" required/>
+         </label>
+         <label id="passwordField">
+             <input type="password" name="passwordField" placeholder="password" required />
+       </label> 
+       <label id="passwordVerifyField">
+      <input type="password" name="passwordVerifyField" placeholder="verify password" required /><br>
+        </label>
+        <input type="submit" value="submit" name="submit"/>
+        <input type="reset" value="Reset">
+    </label>
+       </form>
+       </div>
+       <!-- start of the json -->
+       <script>
+const wrapper = document.querySelector('.wrapper');
+form = wrapper.querySelectorAll('.form');
+submitInput = form[0].querySelector('input[type="submit"]');
+
+function getDataForm(e) {
+    e.preventDefault();
+    var formData = new FormData(form[0]);
+    alert(formData.get('nameField') + ' - ' + formData.get('emailField') + ' - ' + formData.get('passwordField'));
+    
+}
+document.addEventListener('DOMContentLoaded', function(){
+    submitInput.addEventListener('click', getDataForm, false);
+}, false);
+</script>
+        </body>
+        </html>
+        <!-- end of the json-->
+

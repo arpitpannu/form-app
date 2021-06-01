@@ -1,0 +1,70 @@
+h1{
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top :10px;
+    font-family: 'Coda', cursive;
+}
+
+body{
+    background-image: url('./rodion-kutsaev-IJ25m7fXqtk-unsplash\ \(1\).jpg');
+    color:white;
+
+}
+.wrapper{
+    width:480px;
+    max-width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+.wrapper label{
+    display:block;
+    margin: 0.5em 0;
+}
+.wrapper:hover {
+  cursor: pointer;
+ 
+}
+
+.wrapper label input{
+    font-size:18px;
+    padding: 0.5em;
+    font-family: 'Coda', cursive;
+     background: white;
+  color: #00c2ba;
+  width: 200px;
+  height: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif, sans-serif;
+  font-weight: 800;
+  border-radius: 20px;
+  letter-spacing: -1px;
+  transition: 2s;
+  justify-content: center;
+}
+.wrapper input[type="submit"]:hover{
+cursor: pointer;
+}
+.wrapper input[type="submit"]{
+    font-size:20px;
+      color: #00c2ba;
+    font-family: 'Coda', cursive;
+    border-radius: 50px;
+    letter-spacing:  -1px;
+    transition: 2s;
+    width:100px;
+    height:40px;
+}
+
+.wrapper input[type="reset"]{
+    font-size:20px;
+      color: #00c2ba;
+    font-family: 'Coda', cursive;
+    border-radius: 50px;
+    letter-spacing:  -1px;
+    transition: 2s;
+    width:100px;
+    height:40px;
+}
+.wrapper input[type="reset"]:hover{
+cursor: pointer;
+}
